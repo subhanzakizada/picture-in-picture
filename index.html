@@ -3,18 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joke Teller</title>
+    <title>Picture in Picture</title>
     <link rel="icon" type="image/png" href="favicon.png">
+    
+    <!-- Old Favicon - Grab Icon From Google (Might be unsupported in the future) -->
+    <!-- <link rel="icon" type="image/png" href="https://s2.googleusercontent.com/s2/favicons?domain=jacinto.design"> -->
+
     <link rel="stylesheet" href="style.css">
 </head>
-
-<body>
-    <!-- Container -->
-    <div class='container'>
-        <button id='btn-joke'>Tell Me A Joke</button>
-        <audio id='audio' controls></audio>
-    </div>
+<body> 
+    <!-- Video -->
+    <video id='video' controls height='360' width='640' hidden></video>
     
+    <!-- Button Container -->
+    <div id='button-container'>
+        <button id='btn-start'>Start</button>
+    </div>
+   
     <!-- Script -->
     <script src="script.js"></script>
-</body></html>
+</body>
+</html>
